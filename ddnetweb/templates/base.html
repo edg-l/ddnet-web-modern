@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/css/css.css?version=1" />
-    <link rel="stylesheet" type="text/css" href="/css/css-halloween.css?version=1" />
+    <link rel="stylesheet" type="text/css" href="{{ "/css/css.css"|versioned }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "/css/css-halloween.css"|versioned }}" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-touch-icon-114x114.png">
@@ -29,7 +29,7 @@
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
 
-    {% block head required %}{% endblock %}}
+    {% block head %}{% endblock %}}
     {% block title required %}{% endblock %}}
   </head>
   <body>
@@ -58,13 +58,12 @@
                 <li><a href="/staff/">Staff &amp; Contact</a></li>
                 <li><a href="/switch-theme/">Switch Theme</a></li>
             </ul>
-            {{ page.menu | flatify }}
-            {{ site.data.menus[page.menu-extern] | flatify }}
+            {% block menu %}{% endblock %}
         </menu>
       </div>
     </header>
     <section>
-      {{ content }}
+      {% block content required %}{% endblock %}
     </section>
     </article>
   </body>

@@ -7,9 +7,9 @@ def create_env() -> Environment:
         loader=PackageLoader("ddnetweb"),
         autoescape=select_autoescape()
     )
-    
-    env.globals["appname"] = "DDraceNetwork"
-    env.globals["generated_at"] = datetime().now()
+
+    env.globals["APP_NAME"] = "DDraceNetwork"
+    env.globals["GENERATED_AT"] = datetime.now()
 
     env.filters["versioned"] = url_versioned
     return env

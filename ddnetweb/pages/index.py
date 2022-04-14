@@ -1,7 +1,7 @@
-from . import BasePage
+from .base_page import BasePage
 from typing import Tuple
 
 class IndexPage(BasePage):
-    @staticmethod(f)
+    @staticmethod
     def get_template() -> Tuple[str, dict]:
-        return ("index", {})
+        return ("index.html", {})

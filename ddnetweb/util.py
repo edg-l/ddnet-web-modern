@@ -9,6 +9,7 @@ def url_versioned(url: str) -> str:
     
     The url should have a matching file under the static folder.
     """
-    with open(f"{CURRENT_WORKING_DIR}/static/{url}", 'r') as f:
-        checksum = sha256(f.read()).hexdigest()
+    with open(f"{CURRENT_WORKING_DIR}/static{url}", 'r', encoding="utf-8") as f:
+        data = f.read().encode("utf-8")
+        checksum = sha256(data).hexdigest()
         return f"{url}?version={checksum}"
