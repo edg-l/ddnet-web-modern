@@ -1,5 +1,142 @@
 {% extends "base.html" %}
 
+{% block head %}
+    <link
+        rel="alternate"
+        type="application/atom+xml"
+        title="DDNet News"
+        href="/feed/"
+    />
+    <script src="{{ "/js/youtube.js"|versioned }}" type="text/javascript"></script>
+{% endblock %}
+
 {% block title %}{{ APP_NAME }}{% endblock %}
 
-{% block content %}{% endblock %}
+{% block menu %}
+<ul>
+  <li><a href="#news">News</a> (<a href="/news/">all</a>)</li>
+  <li><a href="/server/">Server&nbsp;Features</a></li>
+  <li><a href="/client/">Client&nbsp;Features</a></li>
+  <li><a href="/map/">Map&nbsp;Features</a></li>
+  <li><a href="/howto/">How&nbsp;to&nbsp;Map</a></li>
+  <li><a href="/binds/">Useful&nbsp;Binds</a></li>
+  <li><a href="/auto-font/">Auto-Font</a></li>
+  <li><a href="/settingscommands/">Settings&nbsp;&amp;&nbsp;Commands</a></li>
+  <li><a href="/renames/">Renames</a></li>
+  <li><a href="/funding/">Funding</a></li>
+</ul>
+
+{% endblock %}
+
+{% block content %}
+<div class="block">
+<h2>DDRace Servers and much more!</h2>
+<p>
+DDraceNetwork (DDNet) is an actively maintained version of DDRace, a <a href="https://www.teeworlds.com/">Teeworlds</a> modification with a unique cooperative gameplay. Help each other play through <a href="/releases/">custom maps</a> with up to 64 players, compete against the best in <a href="/tournaments/">international tournaments</a>, design your <a href="/howto/">own maps</a>, or run your <a href="/settingscommands/">own server</a>. The <a href="/status/">official servers</a> are around the world. All <a href="/ranks/">ranks</a> made on official servers are available worldwide and you can <a href="/players/">collect points</a>!
+</p>
+<div class="startvideo"><div class="video-container">
+  <div class="ytplayer" data-id="lm1h1oqpoFg"></div>
+</div></div>
+{#
+<style>
+    .twitch-embed{
+        position: relative;
+        width: 100%;
+        padding-bottom: 42.1875%;
+    }
+</style>
+<div id="twitch-embed"></div>
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    width: 1000,
+    height: 480,
+    channel: "LCSG47",
+  });
+</script>
+#}
+<br/>
+<div class="download"><img class="download-button" src="/img/download.svg" alt="Download"/>
+<p class="download">
+    <span class="big">
+        <a id="download-link" href="/downloads/">Download DDraceNetwork Client &amp; Server {{ DDNET_VERSION }}</a>
+    </span>
+    <br/>
+    <a href="/downloads/">Other systems and versions, changelogs</a>
+</p>
+<a href="https://store.steampowered.com/app/412220/DDraceNetwork/"><img width="36" class="image-icon" src="/img/logos/steam.svg" alt="Steam"/></a>
+<a href="discord"><img width="36" class="image-icon" src="/img/logos/discord.svg" alt="Discord"/></a>
+<a href="feed/"><img width="36" class="image-icon" src="/img/logos/feed.svg" alt="Feed"/></a>
+<a href="https://github.com/ddnet/"><img width="36" class="image-icon" src="/img/logos/github.svg" alt="GitHub"/></a>
+<div class="right" style="width: 100%; max-width: 25em;">
+  <a href="/funding/"><div class="progressbar" id="funding-total" style="width:100%; margin-top:0.25em"><div class="progress-label"></div></div></a>
+  {#{% include funding.html %}#}
+</div>
+</div>
+<br/>
+</div>
+<div class="block">
+<h2 id="news">News</h2>
+</div>
+{#
+{% for post in site.tags.current limit:10 %}
+<div class="block">
+  <div class="news">
+    <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+    <div style="font-size: 75%;">{{ post.date | date: "%Y-%m-%d" }}</div>
+    <div class="news-content">
+      {{ post.content }}
+    </div>
+  </div>
+</div>
+{% endfor %}
+#}
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+// This script detects the host os and shows the correct download.
+window.addEventListener('DOMContentLoaded', (event) => {
+    const downloadButton = document.querySelector("#download-link");
+
+    function getDownloadLinkEnd() {
+        const userAgent = navigator.userAgent;
+        var osPlatform = "unk";
+
+        if (userAgent.match(/android/i))
+            osPlatform = 'and';
+        else if (userAgent.match(/wow64/i))
+            osPlatform = 'win64';
+        else if (userAgent.match(/win64/i))
+            osPlatform = 'win64';
+        else if (userAgent.match(/windows/i))
+            osPlatform = 'win32';
+        else if (userAgent.match(/linux.*x86_64/i))
+            osPlatform = 'lin64';
+        else if (userAgent.match(/linux.*i686/i))
+            osPlatform = 'lin32';
+        else if (userAgent.match(/macintosh|mac os/i))
+            osPlatform = 'mac';
+        
+        const linkEnds = {
+            "win64": ["win64.zip", "Windows (64bit)"],
+            "win32": ["win32.zip", "Windows (32bit)"],
+            "lin64": ["linux_x86_64.tar.xz", "Linux x86"],
+            "lin32": ["linux_x86.tar.xz", "Linux x86_64"],
+            "mac": ["macos.dmg", "macOs"],
+            "unk": false,
+        };
+
+        return linkEnds[osPlatform];
+    }
+
+    const linkEnd = getDownloadLinkEnd();
+
+    if(linkEnd) {
+        downloadButton.href = `/downloads/DDNet-{{DDNET_VERSION}}-${linkEnd[0]}`;
+        downloadButton.textContent = `Download DDraceNetwork Client & Server {{DDNET_VERSION}} for ${linkEnd[1]}`
+    }
+});
+</script>
+{% endblock %}
