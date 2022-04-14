@@ -19,6 +19,8 @@ def generate():
         shutil.rmtree(build_dir)
     except FileNotFoundError:
         pass
-    os.mkdir(build_dir)
+    #os.mkdir(build_dir)
+
+    shutil.copytree(cwd / "static", build_dir)
 
     IndexPage.generate(build_dir, env)
