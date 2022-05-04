@@ -14,26 +14,26 @@ The current [scoreboard](/ranks/):
 <h3>Points (23005 total)</h3>
 <table class="tight">
 <tbody><tr>
-  <td class="rankglobal">1.</td><td class="points">23005 pts</td><td><a href="/players/Starkiller/">Starkiller</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">2.</td><td class="points">22287 pts</td><td><a href="/players/HaHAxD-42-/">HaHAxD*</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">3.</td><td class="points">20753 pts</td><td><a href="/players/Ty-1096-kaN-1095-uk/">TyшkaNчuk</a></td><td><img src="/countryflags/RUS.png" alt="RUS" height="20"></td></tr><tr>
-  <td class="rankglobal">4.</td><td class="points">20551 pts</td><td><a href="/players/Grk0ne/">Grk0ne</a></td><td><img src="/countryflags/CHL.png" alt="CHL" height="20"></td></tr><tr>
-  <td class="rankglobal">5.</td><td class="points">19473 pts</td><td><a href="/players/triki/">triki</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">6.</td><td class="points">19084 pts</td><td><a href="/players/milk/">milk</a></td><td><img src="/countryflags/RUS.png" alt="RUS" height="20"></td></tr><tr>
-  <td class="rankglobal">7.</td><td class="points">18968 pts</td><td><a href="/players/Wombat/">Wombat</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">8.</td><td class="points">18364 pts</td><td><a href="/players/Cor/">Cor</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">9.</td><td class="points">17419 pts</td><td><a href="/players/Beiroc/">Beiroc</a></td><td><img src="/countryflags/BRA.png" alt="BRA" height="20"></td></tr><tr>
-  <td class="rankglobal">10.</td><td class="points">17379 pts</td><td><a href="/players/gB-46--32--124--32-Kayumi/">gB. | Kayumi</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">11.</td><td class="points">17328 pts</td><td><a href="/players/bano/">bano</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">12.</td><td class="points">17233 pts</td><td><a href="/players/Goran/">Goran</a></td><td><img src="/countryflags/BRA.png" alt="BRA" height="20"></td></tr><tr>
-  <td class="rankglobal">13.</td><td class="points">16973 pts</td><td><a href="/players/LanuX/">LanuX</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">14.</td><td class="points">16611 pts</td><td><a href="/players/Xi/">Xi</a></td><td><img src="/countryflags/CHL.png" alt="CHL" height="20"></td></tr><tr>
-  <td class="rankglobal">15.</td><td class="points">16386 pts</td><td><a href="/players/gL-46--32--124--32-Kenzo/">gL. | Kenzo</a></td><td><img src="/countryflags/CHL.png" alt="CHL" height="20"></td></tr><tr>
-  <td class="rankglobal">16.</td><td class="points">16326 pts</td><td><a href="/players/-60-B-181-mM-62-/">&lt;BµmM&gt;</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">17.</td><td class="points">16062 pts</td><td><a href="/players/Tropo/">Tropo</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">18.</td><td class="points">16055 pts</td><td><a href="/players/Aoe/">Aoe</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">19.</td><td class="points">15992 pts</td><td><a href="/players/Freezestyler/">Freezestyler</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr><tr>
-  <td class="rankglobal">20.</td><td class="points">15592 pts</td><td><a href="/players/Forris/">Forris</a></td><td><img src="/countryflags/GER.png" alt="GER" height="20"></td></tr>
+  <td class="rankglobal">1.</td><td class="points">23005 pts</td><td><a href="/players/Starkiller/">Starkiller</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">2.</td><td class="points">22287 pts</td><td><a href="/players/HaHAxD-42-/">HaHAxD*</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">3.</td><td class="points">20753 pts</td><td><a href="/players/Ty-1096-kaN-1095-uk/">TyшkaNчuk</a></td><td><img src="/countryflags/img/posts/RUS.png" alt="RUS" height="20"></td></tr><tr>
+  <td class="rankglobal">4.</td><td class="points">20551 pts</td><td><a href="/players/Grk0ne/">Grk0ne</a></td><td><img src="/countryflags/img/posts/CHL.png" alt="CHL" height="20"></td></tr><tr>
+  <td class="rankglobal">5.</td><td class="points">19473 pts</td><td><a href="/players/triki/">triki</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">6.</td><td class="points">19084 pts</td><td><a href="/players/milk/">milk</a></td><td><img src="/countryflags/img/posts/RUS.png" alt="RUS" height="20"></td></tr><tr>
+  <td class="rankglobal">7.</td><td class="points">18968 pts</td><td><a href="/players/Wombat/">Wombat</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">8.</td><td class="points">18364 pts</td><td><a href="/players/Cor/">Cor</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">9.</td><td class="points">17419 pts</td><td><a href="/players/Beiroc/">Beiroc</a></td><td><img src="/countryflags/img/posts/BRA.png" alt="BRA" height="20"></td></tr><tr>
+  <td class="rankglobal">10.</td><td class="points">17379 pts</td><td><a href="/players/gB-46--32--124--32-Kayumi/">gB. | Kayumi</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">11.</td><td class="points">17328 pts</td><td><a href="/players/bano/">bano</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">12.</td><td class="points">17233 pts</td><td><a href="/players/Goran/">Goran</a></td><td><img src="/countryflags/img/posts/BRA.png" alt="BRA" height="20"></td></tr><tr>
+  <td class="rankglobal">13.</td><td class="points">16973 pts</td><td><a href="/players/LanuX/">LanuX</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">14.</td><td class="points">16611 pts</td><td><a href="/players/Xi/">Xi</a></td><td><img src="/countryflags/img/posts/CHL.png" alt="CHL" height="20"></td></tr><tr>
+  <td class="rankglobal">15.</td><td class="points">16386 pts</td><td><a href="/players/gL-46--32--124--32-Kenzo/">gL. | Kenzo</a></td><td><img src="/countryflags/img/posts/CHL.png" alt="CHL" height="20"></td></tr><tr>
+  <td class="rankglobal">16.</td><td class="points">16326 pts</td><td><a href="/players/-60-B-181-mM-62-/">&lt;BµmM&gt;</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">17.</td><td class="points">16062 pts</td><td><a href="/players/Tropo/">Tropo</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">18.</td><td class="points">16055 pts</td><td><a href="/players/Aoe/">Aoe</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">19.</td><td class="points">15992 pts</td><td><a href="/players/Freezestyler/">Freezestyler</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr><tr>
+  <td class="rankglobal">20.</td><td class="points">15592 pts</td><td><a href="/players/Forris/">Forris</a></td><td><img src="/countryflags/img/posts/GER.png" alt="GER" height="20"></td></tr>
 </tbody>
 </table>
 
