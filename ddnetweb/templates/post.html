@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block head %}
+{% endblock %}
+
+{% block title %}{{ post.title }} - {{ APP_NAME }} News{% endblock %}
+
+{% block menu %}
+<ul>
+  <li><a href="/news/">All News</a></li>
+</ul>
+
+{% endblock %}
+
+{% block content %}
+<h2>{{ post.title }}</h2>
+<div style="font-size: 75%;">{{ post.date | date("%Y-%m-%d") }}</div>
+<div class="block">
+    <div class="news">
+        <h2>{{ post.title }}</h2>
+        <div style="font-size: 75%;">{{ post.date | date("%Y-%m-%d") }}</div>
+        {{ post.content|safe }}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

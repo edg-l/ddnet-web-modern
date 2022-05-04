@@ -2,11 +2,12 @@ import os
 import shutil
 from .util import CURRENT_WORKING_DIR
 from pathlib import Path
-from .pages import IndexPage
+from .pages import IndexPage, PostPage
 from .jinja_env import create_env
 
+
 def generate():
-    """Generates all the pages and copies all files from 
+    """Generates all the pages and copies all files from
     the static folder in the current working directory to the build folder.
     """
 
@@ -19,8 +20,16 @@ def generate():
         shutil.rmtree(build_dir)
     except FileNotFoundError:
         pass
-    #os.mkdir(build_dir)
 
     shutil.copytree(cwd / "static", build_dir)
 
-    IndexPage.generate(build_dir, env)
+    news_path = cwd / "news"
+
+    posts = []
+
+    for f in sorted(os.listdir(cwd / "news"), reverse=True):
+        post = PostPage(news_path / f)
+        post.generate(build_dir, env)
+        posts.append(post)
+    
+    IndexPage(posts).generate(build_dir, env)

@@ -1,0 +1,7 @@
+---
+layout: post
+title: "New DDNet GER2 server running"
+permalink: /news/new-ger2/
+tag: current
+---
+There's a new DDNet GER2 server running now. Let's see if the server runs fine.
